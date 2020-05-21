@@ -1,6 +1,4 @@
-# Dependency directories
-node_modules/
-jspm_packages
-
-# dotenv environment variables file
-.env
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
