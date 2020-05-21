@@ -15,7 +15,7 @@ const authRoute = require('./routes/auth')
 
 dotenv.config()
 
-mongoose.connect(process.env.DB_CONNECT,{useNewUrlParser:true,useUnifiedTopology:true},() =>
+mongoose.connect('mongodb+srv://victor_eyo:test123@team031-5rrit.mongodb.net/userDB',{useNewUrlParser:true,useUnifiedTopology:true},() =>
 console.log('Connected to DB!'))
 
 
