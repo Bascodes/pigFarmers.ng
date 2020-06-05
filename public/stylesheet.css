@@ -1,126 +1,252 @@
-body{
-    margin:0;
-    padding:0;
-    font-family: Montserrat;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  background: #fdfeff;
 }
 
+.navbar {
+  padding: 1rem;
+}
 
-
-.masthead {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    max-width: 100%;
-    height: 100vh; /* if you don't want it to take up the full screen, reduce this number */
-    overflow: hidden;
-    background-size: cover;
-    background: radial-gradient(ellipse at center, rgba(128, 59, 59, 0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url('images/background.jpg') no-repeat center center scroll;
-  }
-
-.navbar{
-    padding:1.5rem
+.navbar-brand {
+  padding-left: 2rem;
 }
 
 nav li a {
-    cursor:pointer
+  cursor: pointer;
 }
 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  h1 {
-    font-style: normal;
-    font-weight: bold;
-    color: #eee;
-    font-size: 9vmin;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
-    margin-bottom: 30px;
-  }
-      
-        
-  button {
-    background: #0069D9;
-    transition: background ease .25s;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    padding: 0.55rem 1.5rem;
-    margin: 0;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  button:hover {
-    background: #63b6b8
-  }
-  button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-  }
-
-  .head-info{
-      text-align: center;
-      padding:2.5rem;
-      font-weight: bold;
-      margin-top: 2.5rem;
-
-  }
-
-  .body-details{
-      text-align: center;
-      padding:1.5rem;
-      line-height: 2rem;
-  }
-
-  .section-images{
-      width:100%;
-      height:auto;
-      padding:2.5rem;
-      border-radius: 50%;
-  }
-
-.resources{
-    padding:20px;
+.row {
+  padding: 1.5rem;
 }
 
-.card{
-  padding:1.5rem;
-  font-family: Montserrat-black;
-
+#icon-image {
+  max-width: 100%;
+  height: auto;
 }
 
-.cta{
-  background-color: #F7F7F7;
-  padding:3.5rem;
-
+.head-cta {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 54px;
+  color: #c3624b;
+  font-family: Montserrat-bold;
 }
 
-.cta text{
-  margin-top: 2rem;
-
+.child-cta {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+  font-family: Montserrat-bold;
+}
+.btn {
+  color: #c3624b;
+  font-weight: bold;
 }
 
-
-footer{
-  margin-top: 0.5rem;
-  padding:1.5rem;
-  background-color: #1B232E;
-  color:white;
-
-}
-.footer-text{
+.links-info-header {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
   text-align: center;
-  font-size: 1.5rem;
+  color: #c3624b;
+  font-family: Montserrat-bold;
+}
+.links-info-details {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: black;
+  font-family: Montserrat;
+}
+.link-icons {
+  width: 80%;
+  height: auto;
+}
+.links-info-children {
+  border: 1px solid grey;
+  padding: 0.5rem;
+}
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  color: #eee;
+  font-size: 9vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 30px;
+}
+
+button {
+  background: #0069d9;
+  transition: background ease 0.25s;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  padding: 0.55rem 1.5rem;
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+button:hover {
+  background: #63b6b8;
+}
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.head-info {
+  text-align: center;
+  padding: 2.5rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+}
+
+.body-details {
+  text-align: center;
+  padding: 1.5rem;
+  line-height: 2rem;
+}
+
+.section-images {
+  width: 100%;
+  height: auto;
+  padding: 2.5rem;
+  border-radius: 50%;
+}
+
+.resources {
+  padding: 20px;
+}
+
+#carouselExampleControls {
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.card {
+  font-family: Montserrat-black;
+}
+
+.card-header,
+h3 {
+  font-weight: bold;
+  font-family: Montserrat-bold;
+}
+.cta {
+  padding: 3.5rem;
+}
+
+.cta text {
+  margin-top: 2rem;
+  line-height: 1.5rem;
+}
+
+footer {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  padding: 2.5rem;
+  color: black;
+}
+
+.footer-header {
+  font-weight: bold;
+}
+
+.footer-items {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-items-body {
+  padding: 1rem;
+}
+
+footer li {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 0;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: rgba(32, 14, 14, 0.84);
+  padding: 4.5rem;
+  margin: 0, 2.5rem;
+}
+
+.blog-content {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.84);
+  text-align: justify;
+  padding: 4.5rem;
+  margin: 0, 2.5rem;
+}

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,79 +13,79 @@
 <body>
   <header id="header">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand text-white" href="#">pigfarmers</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand text-dark" href="#">pigfarms</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Shop <span class="sr-only">(current)</span></a>
+            
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Learn</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Learn</a>
+              <a class="nav-link text-dark" href="#">Directory</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Directory</a>
+              <a class="nav-link text-dark" href="./views/blog" >Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#" >Resources</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#" >Log in</a>
+                <a class="nav-link text-dark" href="#" >Log in</a>
               </li>
           </ul>
         </div>
       </nav>
     </header>
-    
-    <section class='masthead'>
-         
-            <h1>
-              Learn the secrets of successful pig farming
-            </h1>
-              
-            <a href="/signup"> <button>
-                Get started
-              </button></a>
-          </section>
-              
-        </section>
-    
-    
 
-    <section>
+    
+    
+    <section class='row'>
+      <div class="col-md-6 cta">
+        <h2 class="head-cta">Learn <br>
+          the secrets of <br>
+          successful pig farming</h2>
+        <p class="child-cta">Find free resources to get you started as a pig farmer</p>
+        <div>
+          <button type="button" class="btn btn-lg btn-light">Start learning</button>
+        </div>
 
-      <div class="card text-center">
-        <div class="card-header">
-          BLOG
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">EXPERT ARTICLES ON PIG FARMING</h5>
-          <p class="card-text">Find millions of free resources curated to kickstart your journey into pig farming. <br>
-            </p>
-          <a href="#" class="btn btn-primary">Read</a>
-        </div>
-        <div class="card-footer text-muted">
-         
-        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="./images/head-icon.png" alt="" id= icon-image>
+
+      </div>
+    </section>
+    
+    
+    <div class="links-info">
+      <h2 class="links-info-header">
+        Find pig farms around you
+      </h2>
+      <p class="links-info-details">
+        Explore our national e-directory to find pig farms around you. 
+      </p>
+    </div>
+
+    <div class="row links-info-child">
+      <div class="col-md-4 links-info-children">
+        <img src="./images/link-icons.png" alt="" class="link-icons">
+        <p>Connect with other pig farmers in your area</p>
+      </div>
+      <div class="col-md-4 links-info-children">
+        <img src="" alt="">
+        Find exotic breeds for sale 
+      </div>
+      <div class="col-md-4 links-info-children">
+        <img src="" alt="">
+        Visit and learn from other pig farmers
       </div>
 
-      <div class="card text-center">
-        <div class="card-header">
-          DIRECTORY
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">FIND PIG FARMERS</h5>
-          <p class="card-text">
-            Search our directory for pig farms around you and plan to meet up with pig farmers in your area</p>
-          <a href="#" class="btn btn-primary">Find</a>
-        </div>
-        <div class="card-footer text-muted">
-          
-        </div>
-      </div>
+
+    </div>
+
+    
+      
 
       <div class="card text-center">
         <div class="card-header">
@@ -95,7 +94,7 @@
         <div class="card-body">
           <h5 class="card-title">WANT TO START A PIG FARM?</h5>
           <p class="card-text">
-            Buy everything from exotic pig breeds to assorted farm equipments and get it delivered right at your doorstep</p>
+            Buy everything from exotic pig breeds to assorted farm equipments</p>
           <a href="#" class="btn btn-primary">Shop</a>
         </div>
         <div class="card-footer text-muted">
@@ -114,7 +113,7 @@
               <img src="images/download.jfif" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="images/background.jpg" class="d-block w-100" alt="...">
+              <img src="images/form bg.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -164,44 +163,33 @@
 
     <footer>
       <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <h4 class='footer-header'>pigFarmers.ng</h4>
-          <h5>Quick tour</h5>
-          <div class='footer-body'>
-          <ul>
-            <li>Shop</li>
-            <li>Learn</li>
-            <li>Directory</li>
-            <li>Resources</li>
+        
+      
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          
+          <div class='footer-items-body'>
+            <p class='footer-items' >About the team</p>
+            <p class='footer-items'>Contact us</p>
+            <p class='footer-items'>Advertise with us</p>
+            <p class='footer-items'>FAQ</p>
           </ul>
+      </div>
+    </div>
+      
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class='footer-items-body'>
+
+          <p>Sign up to receive exciting updates</p>
+          <form action="/" method='POST'>
+            <input type="text" name="" value="" placeholder="Email address">
+          <button  class='btn btn-sm btn-primary mailing-btn' type="button" name="button" placeholder="Email address">Submit</button>
+
+          </form>
         </div>
       </div>
+
       
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <h4 class='footer-header'>About</h4>
-          <h5>pigFarmers Network</h5>
-          <div class='footer-body'>
-          <ul>
-            <li>About us</li>
-            <li>Contact</li>
-            <li>FAQ</li>
-          </ul>
-        </div>
-      </div>
-      
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <h4>Newsletter</h4>
-      <h6>Sign up to receive exciting updates</h6>
-          <input type="text" name="" value="" placeholder="Email address">
-          <button type="button" name="button" placeholder="Email address">Go</button>
-        </div>
-      
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <h4>Follow us</h4>
-          <h6><i class="fab fa-facebook"></i></h6>
-                <h6><i class="fab fa-twitter"></i></h6>
-                <h6><i class="fab fa-instagram"></i></h6>
-        </div>
+        
       
       
       
