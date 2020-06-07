@@ -5,7 +5,7 @@ const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 
 router.get("/signup", (req, res) => {
-  res.sendFile(`${__dirname}/signup.html`);
+  res.sendFile(__dirname + "/signup.html");
 });
 
 router.post("/signup", async (req, res) => {

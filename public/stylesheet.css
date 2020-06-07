@@ -66,9 +66,8 @@ nav li a {
   width: 80%;
   height: auto;
 }
-.links-info-children {
-  border: 1px solid grey;
-  padding: 0.5rem;
+.card-group {
+  padding: 1.5rem;
 }
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
@@ -179,8 +178,6 @@ button:focus {
 }
 
 #carouselExampleControls {
-  padding: 1rem;
-  margin-left: 1rem;
 }
 
 .card {
@@ -192,13 +189,21 @@ h3 {
   font-weight: bold;
   font-family: Montserrat-bold;
 }
+
+.card-group {
+  margin-bottom: 36px;
+}
 .cta {
   padding: 3.5rem;
+  margin-top: 2rem;
 }
 
 .cta text {
   margin-top: 2rem;
   line-height: 1.5rem;
+}
+.btn-center {
+  text-align: center;
 }
 
 footer {

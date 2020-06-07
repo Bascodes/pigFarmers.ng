@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.static("public"));
 app.use(bodyParser.json());
-app.use(bodyParser({ extended: true }));
+app.use(bodyParser({ extended: false }));
 app.set("view engine", "ejs");
 
 //const authRoute = require("./routes/auth");
@@ -23,7 +23,7 @@ mongoose.connect(
 );
 
 mongoose.connect(
-  "mongodb+srv://victor_eyo:test123@team031-5rrit.mongodb.net/blogDB",
+  "mongodb+srv://victor_eyo:test123@team031-5rrit.mongodb.net/farmerDB",
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log("Connected to DB!")
 );
@@ -32,9 +32,13 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-//app.use("/", authRoute);
-//app.use("/", blogRoute);
-//app.use("/", dbRoute);
+app.get("/enrol", (req, res) => {
+  res.sendFile(__dirname + "/enrol.html");
+});
+
+app.use("/", require("./routes/auth"));
+app.use("/", require("./routes/blogRoute"));
+//app.use("/", require("./routes/directory"));
 
 let port = process.env.PORT;
 
